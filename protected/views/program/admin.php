@@ -45,7 +45,7 @@ $('.search-form form').submit(function(){
 		'ProgramDescription',
 		array(
                         'name'=>'CountryID',
-                        'filter'=>CHtml::listData(country::model()->findAll(), 'CountryID', 'CountryName'),
+                        'filter'=>CHtml::listData(Country::model()->findAll(), 'CountryID', 'CountryName'),
                         'value'=>'country::Model()->FindByPk($data->CountryID)->CountryName',
                 ),
 		'StartDate',

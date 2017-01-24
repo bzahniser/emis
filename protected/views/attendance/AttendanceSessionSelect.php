@@ -22,7 +22,7 @@
                     $Cond='Active=1 and CycleEnd=0 and FacilitatorID='.Yii::app()->user->getState('FacilitatorID');
                 }
                 
-                $Array = CHtml::listData(cycle::model()->findAll($Cond), 'CycleID', 'CycleName');
+                $Array = CHtml::listData(Cycle::model()->findAll($Cond), 'CycleID', 'CycleName');
                 echo $form->dropDownList($modelSession, 'CycleID',$Array,
                 array( 'empty'=>'-- Select --',
                     'ajax' => array(

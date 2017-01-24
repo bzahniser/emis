@@ -47,14 +47,14 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		array(
                         'name'=>'ProgramID',
-                        'filter'=>CHtml::listData(program::model()->findAll(), 'ProgramID', 'ProgramName'),
+                        'filter'=>CHtml::listData(Program::model()->findAll(), 'ProgramID', 'ProgramName'),
                         'value'=>'$data->program ? $data->program->ProgramName: "-"'
                 ),
                 'CoordinatorName',
 		'CoordinatorFullName',
                 array(
                         'name'=>'GroupID',
-                        'filter'=>CHtml::listData(coordinatorGroup::model()->findAll(), 'GroupID', 'GroupName'),
+                        'filter'=>CHtml::listData(CoordinatorGroup::model()->findAll(), 'GroupID', 'GroupName'),
                         'value'=>'$data->group ? $data->group->GroupName: "-"'
                 ),
                 'PhoneNumber',

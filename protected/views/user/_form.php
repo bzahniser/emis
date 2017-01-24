@@ -21,7 +21,7 @@
 
         <div class="row">
 		<?php echo $form->labelEx($model,'ProgramID'); ?>
-		<?php  $ProgramArray = CHtml::listData(program::model()->findAll('Active=1'), 'ProgramID', 'ProgramName');
+		<?php  $ProgramArray = CHtml::listData(Program::model()->findAll('Active=1'), 'ProgramID', 'ProgramName');
                         echo $form->dropDownList($model, 'ProgramID',$ProgramArray,
                         array( 'empty'=>'-- Select --',)
                      );
@@ -91,7 +91,7 @@
                     if($model->isNewRecord)
                     {
                         echo $form->dropDownList($modelAuthAss, 'itemname', 
-                            CHtml::listData(Authitem::model()->findAll('type=2'), 'name', 'name'),
+                            CHtml::listData(AuthItem::model()->findAll('type=2'), 'name', 'name'),
                             array('empty'=>'-- Select --'));
                     }
                  ?>

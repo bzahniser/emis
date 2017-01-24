@@ -10,12 +10,12 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'Courses', 'url'=>array('course/admin')),
 	array('label'=>'Create Course', 'url'=>array('course/create')),
-        array('label'=>'Levels', 'url'=>array('Level/admin')),
+        array('label'=>'Levels', 'url'=>array('level/admin')),
         array('label'=>'Create Level', 'url'=>array('level/create')),
-        array('label'=>'Level Subject', 'url'=>array('levelsubject/admin')),
-        array('label'=>'Add Level Subject', 'url'=>array('levelsubject/create')),
-        array('label'=>'Level Exam', 'url'=>array('levelexam/admin')),
-        array('label'=>'Add Level Exam', 'url'=>array('levelexam/create')),
+        array('label'=>'Level Subject', 'url'=>array('levelSubject/admin')),
+        array('label'=>'Add Level Subject', 'url'=>array('levelSubject/create')),
+        array('label'=>'Level Exam', 'url'=>array('levelExam/admin')),
+        array('label'=>'Add Level Exam', 'url'=>array('levelExam/create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -49,7 +49,7 @@ $('.search-form form').submit(function(){
 		
                 array(
                         'name'=>'ProgramID',
-                        'filter'=>CHtml::listData(program::model()->findAll(), 'ProgramID', 'ProgramName'),
+                        'filter'=>CHtml::listData(Program::model()->findAll(), 'ProgramID', 'ProgramName'),
                         'value'=>'$data->program ? $data->program->ProgramName: "-"'
                 ),
 		'CourseID',
@@ -58,13 +58,13 @@ $('.search-form form').submit(function(){
 		
                 array(
                         'name'=>'CourseTypeID',
-                        'filter'=>CHtml::listData(courseType::model()->findAll(), 'CourseTypeID', 'CourseTypeName'),
+                        'filter'=>CHtml::listData(CourseType::model()->findAll(), 'CourseTypeID', 'CourseTypeName'),
                         'value'=>'$data->courseType ? $data->courseType->CourseTypeName: "-"'
                 ),
 		
                 array(
                         'name'=>'CourseGroupID',
-                        'filter'=>CHtml::listData(courseGroup::model()->findAll(), 'GroupID', 'GroupName'),
+                        'filter'=>CHtml::listData(CourseGroup::model()->findAll(), 'GroupID', 'GroupName'),
                         'value'=>'$data->courseGroup ? $data->courseGroup->GroupName: "-"'
                 ),
                 'Active',

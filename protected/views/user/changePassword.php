@@ -32,7 +32,7 @@
         <div class="row">
 		<?php echo CHtml::label('User','UserID'); ?>
 		<?php 
-                    $Array = CHtml::listData(user::model()->findAll('Active=1'), 'UserID', 'LoginName');
+                    $Array = CHtml::listData(User::model()->findAll('Active=1'), 'UserID', 'LoginName');
                     echo CHtml::dropDownList('UserID',1,$Array);
                 ?>
 	</div>

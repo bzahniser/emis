@@ -50,9 +50,9 @@
                             if((int)$UserMnu['SettingsMenu']===1)
                                 $MenuAray[5]=array('label'=>'Settings', 'url'=>array('/site/Settings'),'visible'=>true);
                              if((int)$UserMnu['TodayList']===1)
-                                $MenuAray[6]=array('label'=>"Todays List", 'url'=>array('/attendance/DailyStudentList'),'visible'=>true);
+                                $MenuAray[6]=array('label'=>"Todays List", 'url'=>array('/Attendance/DailyStudentList'),'visible'=>true);
                             if((int)$UserMnu['AttendanceMenu']===1)
-                                $MenuAray[7]=array('label'=>"Attendance Entry", 'url'=>array('/attendance/AttendanceSessionSelect'),'visible'=>true);
+                                $MenuAray[7]=array('label'=>"Attendance Entry", 'url'=>array('/Attendance/AttendanceSessionSelect'),'visible'=>true);
                             $MenuAray[8]=array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),'visible'=>true);
                             $MenuAray[]=array('label'=>'Password ('.Yii::app()->user->name.')', 'url'=>array('/user/changeMyPassword'),'visible'=>true);
                             //
@@ -67,7 +67,7 @@
         <?php 
         if(!Yii::app()->user->isGuest and (int)$UserMnu['SideMenu']===1)
         {
-        $this->beginWidget('application.extensions.leftsidebar.leftSidebar', array('title' => 'Menu', 'collapsed' => true));
+        $this->beginWidget('application.extensions.leftsidebar.LeftSidebar', array('title' => 'Menu', 'collapsed' => true));
             echo "<div> <br> </div>";   
             echo "<div> <a color='black' href='".Yii::app()->baseUrl."/index.php/Student/create'> <font size=2 color=#100> <b>.  Register Student </b> </b> </font> </a> </div>";
             echo "<div> <a color='black' href='".Yii::app()->baseUrl."/index.php/Student/CopyFromBrotherSelect'> <font size=2 color=#100> <b>.  Copy to New Student </b> </b> </font> </a> </div>";

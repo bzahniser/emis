@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	 array('label'=>'Students', 'url'=>array('student/admin')),
-	array('label'=>'Add Student', 'url'=>array('student/create')),
+	array('label'=>'Students', 'url'=>array('Student/admin')),
+	array('label'=>'Add Student', 'url'=>array('Student/create')),
         array('label'=>'Leave', 'url'=>array('Leave/admin')),
         array('label'=>'New Leave', 'url'=>array('Leave/create')),
         array('label'=>'Enrollment', 'url'=>array('CycleEnrolment/admin')),
@@ -56,18 +56,18 @@ $('.search-form form').submit(function(){
                 ),
 		array(
                         'name'=>'ProgramID',
-                        'filter'=>CHtml::listData(program::model()->findAll(), 'ProgramID', 'ProgramName'),
+                        'filter'=>CHtml::listData(Program::model()->findAll(), 'ProgramID', 'ProgramName'),
                         'value'=>'$data->program ? $data->program->ProgramName: "-"'
                 ),
                 array(
                         'name'=>'CourseID',
-                        'filter'=>CHtml::listData(course::model()->findAll(), 'CourseID', 'CourseName'),
+                        'filter'=>CHtml::listData(Course::model()->findAll(), 'CourseID', 'CourseName'),
                         'value'=>'$data->course ? $data->course->CourseName: "-"'
                 ),
 		
                 array(
                         'name'=>'LevelID',
-                        'filter'=>CHtml::listData(level::model()->findAll(), 'LevelID', 'LevelName'),
+                        'filter'=>CHtml::listData(Level::model()->findAll(), 'LevelID', 'LevelName'),
                         'value'=>'$data->level ? $data->level->LevelName: "-"'
                 ),
                 

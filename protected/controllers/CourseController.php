@@ -93,7 +93,7 @@ class CourseController extends Controller
                 elseif ((int)$typ===200000)//World Subject
                 {
                     $modelCycle=$this->loadModelCycle($id);
-                    $this->renderPartial('//Cycle/CourseCycleWidget',array('model'=>$modelCycle),false,true);
+                    $this->renderPartial('//cycle/CourseCycleWidget',array('model'=>$modelCycle),false,true);
                 }
                 elseif ((int)$typ===300000)//World Subject
                 {

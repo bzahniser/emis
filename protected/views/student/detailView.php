@@ -4,8 +4,8 @@
 
 
 $this->menu=array(
-	 array('label'=>'Students', 'url'=>array('student/admin')),
-	array('label'=>'Add Student', 'url'=>array('student/create')),
+	array('label'=>'Students', 'url'=>array('Student/admin')),
+	array('label'=>'Add Student', 'url'=>array('Student/create')),
         array('label'=>'Leave', 'url'=>array('Leave/admin')),
         array('label'=>'New Leave', 'url'=>array('Leave/create')),
         array('label'=>'Enrollment', 'url'=>array('CycleEnrolment/admin')),
@@ -14,6 +14,8 @@ $this->menu=array(
         array('label'=>'Add to Waiting', 'url'=>array('Waiting/create')),
         array('label'=>'Attendance', 'url'=>array('Attendance/admin')),
         array('label'=>'Session Attendance', 'url'=>array('Attendance/AttendanceSessionSelect')),
+        array('label'=>'Exams', 'url'=>array('StudentExam/admin')),
+        array('label'=>'Enter Scores', 'url'=>array('Studentexam/ExamSessionSelect')),
 );
 ?>
 
@@ -33,8 +35,8 @@ $this->widget('zii.widgets.jui.CJuiTabs', array(
         'Student'=>$this->renderPartial('partialView1',array('model'=>$model,),true),
         'Parent'=>$this->renderPartial('partialViewParent',array('model'=>$model,),true),
         'Geo Info'=>$this->renderPartial('GeoLocation',array('model'=>$model,),true),
-        'Cycles'=>$this->renderPartial('//cycleenrolment/StudentDetails',array('model'=>$model,),true),
-        'Exams'=>$this->renderPartial('//studentexam/StudentExamDetail',array('studentid'=>$model->StudentID,),true),
+        'Cycles'=>$this->renderPartial('//cycleEnrolment/StudentDetails',array('model'=>$model,),true),
+        'Exams'=>$this->renderPartial('//studentExam/StudentExamDetail',array('studentid'=>$model->StudentID,),true),
         'Time Table'=>$this->renderPartial('TimeTable',array('eventArray'=>$eventArray,),true),
     ),
 

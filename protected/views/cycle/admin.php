@@ -7,18 +7,18 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Cycles', 'url'=>array('cycle/admin')),
-	array('label'=>'Start New Cycle', 'url'=>array('cycle/create')),
-        array('label'=>'Cycle Exam', 'url'=>array('cycleexam/admin')),
-        array('label'=>'Add Cycle Exam', 'url'=>array('cycleexam/create')),
-        array('label'=>'Cycle Subject', 'url'=>array('cyclesubject/admin')),
-        array('label'=>'Add Cycle Subject', 'url'=>array('cyclesubject/create')),
+	array('label'=>'Cycles', 'url'=>array('Cycle/admin')),
+	array('label'=>'Start New Cycle', 'url'=>array('Cycle/create')),
+        array('label'=>'Cycle Exam', 'url'=>array('Cycleexam/admin')),
+        array('label'=>'Add Cycle Exam', 'url'=>array('Cycleexam/create')),
+        array('label'=>'Cycle Subject', 'url'=>array('Cyclesubject/admin')),
+        array('label'=>'Add Cycle Subject', 'url'=>array('Cyclesubject/create')),
         array('label'=>'Time Table', 'url'=>array('CycleSession/admin')),
         array('label'=>'New Session', 'url'=>array('CycleSession/create')),
         array('label'=>'Enrollment', 'url'=>array('Cycleenrolment/admin')),
         array('label'=>'New Enrollment', 'url'=>array('Cycleenrolment/create')),
-        array('label'=>'Waiting', 'url'=>array('waiting/admin')),
-        array('label'=>'New Waiting', 'url'=>array('waiting/create')),
+        array('label'=>'Waiting', 'url'=>array('Waiting/admin')),
+        array('label'=>'New Waiting', 'url'=>array('Waiting/create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -50,18 +50,18 @@ $('.search-form form').submit(function(){
 		
                 array(
                         'name'=>'ProgramID',
-                        'filter'=>CHtml::listData(program::model()->findAll(), 'ProgramID', 'ProgramName'),
+                        'filter'=>CHtml::listData(Program::model()->findAll(), 'ProgramID', 'ProgramName'),
                         'value'=>'$data->program ? $data->program->ProgramName: "-"'
                 ),
 		
 		array(
                         'name'=>'CourseID',
-                        //'filter'=>CHtml::listData(course::model()->findAll(), 'CourseID', 'CourseName'),
+                        //'filter'=>CHtml::listData(Course::model()->findAll(), 'CourseID', 'CourseName'),
                         'value'=>'$data->course ? $data->course->CourseName: "-"'
                 ),
 		array(
                         'name'=>'LevelID',
-                        //'filter'=>CHtml::listData(level::model()->findAll(), 'LevelID', 'LevelName'),
+                        //'filter'=>CHtml::listData(Level::model()->findAll(), 'LevelID', 'LevelName'),
                         'value'=>'$data->level ? $data->level->LevelName: "-"'
                 ),
 		

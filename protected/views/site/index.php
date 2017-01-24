@@ -28,8 +28,5 @@ $this->pageTitle=Yii::app()->name;
 	</li>
 </p>
 
-<a href="https://engage.rescue.org/donate">
-  <img src="http://localhost/IEMS/images/donate.JPG" alt="Donate" style="border:0" align="Right">
-</a>
 
-<img src="http://localhost/IEMS/images/r1.png" class="floatLeft" width="40%" height="40%"  align="right">
+<img src="/emis/images/Turkey Education 2016.jpg" class="floatLeft"   align="right">

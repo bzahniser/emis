@@ -50,13 +50,13 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'CenterName',
 		array(
                         'name'=>'CountryID',
-                        'filter'=>CHtml::listData(country::model()->findAll(), 'CountryID', 'CountryName'),
+                        'filter'=>CHtml::listData(Country::model()->findAll(), 'CountryID', 'CountryName'),
                         'value'=>'$data->country ? $data->country->CountryName: "-"'
                 ),
 		
                 array(
                         'name'=>'CityID',
-                        'filter'=>CHtml::listData(city::model()->findAll(), 'CityID', 'CityName'),
+                        'filter'=>CHtml::listData(City::model()->findAll(), 'CityID', 'CityName'),
                         'value'=>'$data->city ? $data->city->CityName: "-"'
                 ),
 		

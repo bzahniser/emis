@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-         array('label'=>'Students', 'url'=>array('student/admin')),
-	array('label'=>'Add Student', 'url'=>array('student/create')),
+        array('label'=>'Students', 'url'=>array('Student/admin')),
+	array('label'=>'Add Student', 'url'=>array('Student/create')),
         array('label'=>'Leave', 'url'=>array('Leave/admin')),
         array('label'=>'New Leave', 'url'=>array('Leave/create')),
         array('label'=>'Enrollment', 'url'=>array('CycleEnrolment/admin')),
@@ -18,7 +18,7 @@ $this->menu=array(
         array('label'=>'Add to Waiting', 'url'=>array('Waiting/create')),
         array('label'=>'Attendance', 'url'=>array('Attendance/admin')),
         array('label'=>'Session Attendance', 'url'=>array('Attendance/AttendanceSessionSelect')),
-        array('label'=>'Exams', 'url'=>array('studentexam/admin')),
+        array('label'=>'Exams', 'url'=>array('StudentExam/admin')),
         array('label'=>'Enter Scores', 'url'=>array('Studentexam/ExamSessionSelect')),
     
 );
@@ -54,7 +54,7 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		array(
                         'name'=>'ProgramID',
-                        'filter'=>CHtml::listData(program::model()->findAll(), 'ProgramID', 'ProgramName'),
+                        'filter'=>CHtml::listData(Program::model()->findAll(), 'ProgramID', 'ProgramName'),
                         'value'=>'$data->program ? $data->program->ProgramName: "-"'
                 ),
 		'StudentID',

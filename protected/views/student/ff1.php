@@ -26,7 +26,7 @@
                             <?php echo $form->labelEx($model,'ProgramID'); ?>
                             <?php $model->ProgramID=1;if (Yii::app()->user->getState('ProgramID')===0)
                                     {
-                                        $Array = CHtml::listData(program::model()->findAll('Active=1'), 'ProgramID', 'ProgramName');
+                                        $Array = CHtml::listData(Program::model()->findAll('Active=1'), 'ProgramID', 'ProgramName');
                                         echo $form->dropDownList($model, 'ProgramID',$Array,
                                         array( 'empty'=>'-- Select --'));
                                     }
@@ -34,7 +34,7 @@
                                     {
                                         $Cond='Active=1 and ProgramID='.Yii::app()->user->getState('ProgramID');
                                         $model->ProgramID=Yii::app()->user->getState('ProgramID');
-                                        $Array = CHtml::listData(program::model()->findAll($Cond), 'ProgramID', 'ProgramName');
+                                        $Array = CHtml::listData(Program::model()->findAll($Cond), 'ProgramID', 'ProgramName');
                                         echo $form->dropDownList($model, 'ProgramID',$Array,
                                         array());
                                     }
@@ -97,7 +97,7 @@
         
                     <div class="row">
                             <?php echo $form->labelEx($model,'IsMale'); ?>
-                            <?php   $Array = CHtml::listData(gender::model()->findAll(), 'GenderID', 'GenderName');
+                            <?php   $Array = CHtml::listData(Gender::model()->findAll(), 'GenderID', 'GenderName');
                                     echo $form->dropDownList($model, 'IsMale',$Array,
                                     array( 'empty'=>'-- Select --' )); ?>
                             <?php echo $form->error($model,'IsMale'); ?>
@@ -173,7 +173,7 @@
                                     array( 'empty'=>'-- Select --',
                                         'ajax' => array(
                                              'type'=>'POST',
-                                             'url'=>CController::createUrl('student/fillCurrentCity'),
+                                             'url'=>CController::createUrl('Student/fillCurrentCity'),
                                             'update'=>'#'.CHtml::activeId($model,'CurrentCityID')
                                             ),
                                     ));
@@ -218,7 +218,7 @@
                                     array( 'empty'=>'-- Select --',
                                         'ajax' => array(
                                              'type'=>'POST',
-                                             'url'=>CController::createUrl('student/fillOriginalCity'),
+                                             'url'=>CController::createUrl('Student/fillOriginalCity'),
                                             'update'=>'#'.CHtml::activeId($model,'OriginalCityID')
                                             ),
                                     ));

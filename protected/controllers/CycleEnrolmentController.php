@@ -384,6 +384,9 @@ class CertificatePdf extends EPdfFactoryDoc
         
         $pdf->SetFontSize(20);
         $model = $this->getDataItem('model'); 
+        
+        $pdf->Image("C:\xampp\htdocs\EMiS\protected\pdf\t.jpg");
+        
         $pdf->SetXY(100, 100);
         $pdf->Write(20, 'Student: ' . $model->student->FullName);
         $pdf->SetXY(50, 50);

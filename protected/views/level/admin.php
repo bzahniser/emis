@@ -8,14 +8,14 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Courses', 'url'=>array('course/admin')),
-	array('label'=>'Create Course', 'url'=>array('course/create')),
+	array('label'=>'Courses', 'url'=>array('Course/admin')),
+	array('label'=>'Create Course', 'url'=>array('Course/create')),
         array('label'=>'Levels', 'url'=>array('Level/admin')),
-        array('label'=>'Create Level', 'url'=>array('level/create')),
-        array('label'=>'Level Subject', 'url'=>array('levelsubject/admin')),
-        array('label'=>'Add Level Subject', 'url'=>array('levelsubject/create')),
-        array('label'=>'Level Exam', 'url'=>array('levelexam/admin')),
-        array('label'=>'Add Level Exam', 'url'=>array('levelexam/create')),
+        array('label'=>'Create Level', 'url'=>array('Level/create')),
+        array('label'=>'Level Subject', 'url'=>array('Levelsubject/admin')),
+        array('label'=>'Add Level Subject', 'url'=>array('LevelSubject/create')),
+        array('label'=>'Level Exam', 'url'=>array('LevelExam/admin')),
+        array('label'=>'Add Level Exam', 'url'=>array('LevelExam/create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -48,12 +48,12 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		array( 
 			'name'=>'ProgramID', 
-			'filter'=>CHtml::listData(program::model()->findAll(), 'ProgramID', 'ProgramName'), 
+			'filter'=>CHtml::listData(Program::model()->findAll(), 'ProgramID', 'ProgramName'), 
 			'value'=>'$data->program ? $data->program->ProgramName: "-"' 
 			),
 		array( 
 			'name'=>'CourseID', 
-			'filter'=>CHtml::listData(course::model()->findAll(), 
+			'filter'=>CHtml::listData(Course::model()->findAll(), 
 			'CourseID', 'CourseName'), 'value'=>'$data->course ? $data->course->CourseName: "-"' 
 			),
 		'LevelName',

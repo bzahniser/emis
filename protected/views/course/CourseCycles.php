@@ -6,7 +6,7 @@
 		'htmlOptions' => array(
 			'class' => 'treeview-famfamfam', //there are some classes that ready to use
 		),
-		'table' => 'V_CourseTreeCycle', //what table the menu would come from
+		'table' => 'v_coursetreecycle', //what table the menu would come from
 		'hierModel' => 'adjacency', //hierarchy model of the table
 		'conditions' => array('Course=:visible', array(':visible' => $CourseID)), //other conditions if any. Each fields should be prefixed with 't1.' to avoid query errors
 		//declaration of fields

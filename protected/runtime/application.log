@@ -35723,3 +35723,160 @@ in C:\xampp\htdocs\IEMS\index.php (13)
 2016/11/28 15:01:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '494-14' for key 'Cycle_Enrolment_Cycle_Student'. The SQL statement executed was: INSERT INTO `tbl_cycle_enrolment` (`StudentID`, `ProgramID`, `CourseID`, `LevelID`, `CycleID`, `Transportation`, `Created`, `CreatedBy`, `Updated`, `UpdatedBy`, `Active`, `Withdrawl`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11).
 in C:\xampp\htdocs\IEMS\protected\controllers\CycleEnrolmentController.php (251)
 in C:\xampp\htdocs\IEMS\index.php (13)
+2017/01/20 11:39:34 [error] [php] include(C:\xampp\htdocs\EMiS\protected\models\Authassignment.php): failed to open stream: Permission denied (C:\xampp\htdocs\EMiS\Framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\protected\components\UserIdentity.php(31): spl_autoload_call()
+#1 C:\xampp\htdocs\EMiS\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\EMiS\Framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\htdocs\EMiS\Framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\EMiS\Framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\EMiS\protected\controllers\SiteController.php(104): LoginForm->validate()
+#6 C:\xampp\htdocs\EMiS\Framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\EMiS\Framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\EMiS\Framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\EMiS\Framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\EMiS\index.php(14): CWebApplication->run()
+REQUEST_URI=/emis/index.php/site/login
+in C:\xampp\htdocs\EMiS\protected\components\UserIdentity.php (31)
+in C:\xampp\htdocs\EMiS\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\EMiS\protected\controllers\SiteController.php (104)
+2017/01/20 11:39:55 [error] [php] include(C:\xampp\htdocs\EMiS\protected\models\Authassignment.php): failed to open stream: Permission denied (C:\xampp\htdocs\EMiS\Framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\protected\components\UserIdentity.php(31): spl_autoload_call()
+#1 C:\xampp\htdocs\EMiS\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\EMiS\Framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\htdocs\EMiS\Framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\EMiS\Framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\EMiS\protected\controllers\SiteController.php(104): LoginForm->validate()
+#6 C:\xampp\htdocs\EMiS\Framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\EMiS\Framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\EMiS\Framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\EMiS\Framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\EMiS\index.php(14): CWebApplication->run()
+REQUEST_URI=/emis/index.php/site/login
+in C:\xampp\htdocs\EMiS\protected\components\UserIdentity.php (31)
+in C:\xampp\htdocs\EMiS\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\EMiS\protected\controllers\SiteController.php (104)
+2017/01/20 12:53:28 [error] [php] include(C:\xampp\htdocs\EMiS\protected\models\Authassignment.php): failed to open stream: Permission denied (C:\xampp\htdocs\EMiS\Framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\protected\components\UserIdentity.php(31): spl_autoload_call()
+#1 C:\xampp\htdocs\EMiS\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\EMiS\Framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\htdocs\EMiS\Framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\EMiS\Framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\EMiS\protected\controllers\SiteController.php(104): LoginForm->validate()
+#6 C:\xampp\htdocs\EMiS\Framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\EMiS\Framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\EMiS\Framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\EMiS\Framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\EMiS\index.php(14): CWebApplication->run()
+REQUEST_URI=/emis/index.php/site/login
+in C:\xampp\htdocs\EMiS\protected\components\UserIdentity.php (31)
+in C:\xampp\htdocs\EMiS\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\EMiS\protected\controllers\SiteController.php (104)
+2017/01/20 14:15:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'emisdb.authassignment' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `authassignment`.
+in C:\xampp\htdocs\EMiS\protected\components\UserIdentity.php (31)
+in C:\xampp\htdocs\EMiS\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\EMiS\protected\controllers\SiteController.php (104)
+2017/01/20 14:15:59 [error] [exception.CDbException] exception 'CDbException' with message 'The table "authassignment" for active record class "Authassignment" cannot be found in the database.' in C:\xampp\htdocs\EMiS\Framework\db\ar\CActiveRecord.php:2387
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\Framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Authassignment))
+#1 C:\xampp\htdocs\EMiS\Framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\EMiS\Framework\db\ar\CActiveRecord.php(1523): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\EMiS\protected\components\UserIdentity.php(31): CActiveRecord->findByAttributes(Array)
+#4 C:\xampp\htdocs\EMiS\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 C:\xampp\htdocs\EMiS\Framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 C:\xampp\htdocs\EMiS\Framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 C:\xampp\htdocs\EMiS\Framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 C:\xampp\htdocs\EMiS\protected\controllers\SiteController.php(104): CModel->validate()
+#9 C:\xampp\htdocs\EMiS\Framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\EMiS\Framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\EMiS\Framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\EMiS\Framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\EMiS\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/emis/index.php/site/login
+HTTP_REFERER=http://localhost/emis/index.php/site/login
+---
+2017/01/20 14:16:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'emisdb.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid.
+in C:\xampp\htdocs\EMiS\index.php (14)
+2017/01/20 14:16:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'emisdb.authassignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `AuthAssignment`
+WHERE userid=:userid' in C:\xampp\htdocs\EMiS\Framework\db\CDbCommand.php:547
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\Framework\db\CDbCommand.php(400): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\EMiS\Framework\web\auth\CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\EMiS\Framework\web\auth\CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments(NULL)
+#3 C:\xampp\htdocs\EMiS\Framework\web\auth\CWebUser.php(815): CDbAuthManager->checkAccess('StudentRead', NULL, Array)
+#4 C:\xampp\htdocs\EMiS\Framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('StudentRead')
+#5 C:\xampp\htdocs\EMiS\Framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(CWebUser))
+#6 C:\xampp\htdocs\EMiS\Framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(StudentController), Object(CInlineAction), '::1', 'GET')
+#7 C:\xampp\htdocs\EMiS\Framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 C:\xampp\htdocs\EMiS\Framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\EMiS\Framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\EMiS\Framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\EMiS\Framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\EMiS\Framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController('student')
+#15 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\EMiS\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/emis/index.php/student
+---
+2017/01/23 08:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "localhost".' in C:\xampp\htdocs\EMiS\Framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\Framework\web\CController.php(270): CController->missingAction('localhost')
+#1 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(282): CController->run('localhost')
+#2 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController('site/localhost/...')
+#3 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\EMiS\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/emis/index.php/site/localhost/emis/images/Turkey%20Education%202016.jpg
+HTTP_REFERER=http://localhost/emis/index.php/site/index
+---
+2017/01/23 08:10:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "localhost".' in C:\xampp\htdocs\EMiS\Framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\Framework\web\CController.php(270): CController->missingAction('localhost')
+#1 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(282): CController->run('localhost')
+#2 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController('site/localhost/...')
+#3 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\EMiS\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/emis/index.php/site/localhost/emis/images/Turkey%20Education%202016.jpg
+HTTP_REFERER=http://localhost/emis/index.php/site/index
+---
+2017/01/23 08:16:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "EMiS".' in C:\xampp\htdocs\EMiS\Framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\Framework\web\CController.php(270): CController->missingAction('EMiS')
+#1 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(282): CController->run('EMiS')
+#2 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController('site/EMiS/image...')
+#3 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\EMiS\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/emis/index.php/site/EMiS/images/Turkey%20Education%202016.jpg
+HTTP_REFERER=http://localhost/emis/index.php/site/index
+---
+2017/01/23 08:16:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/Turkey Education 2016.jpg".' in C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\EMiS\Framework\web\CWebApplication.php(141): CWebApplication->runController('images/Turkey E...')
+#1 C:\xampp\htdocs\EMiS\Framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\EMiS\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/emis/index.php/images/Turkey%20Education%202016.jpg
+HTTP_REFERER=http://localhost/emis/index.php/site/index
+---

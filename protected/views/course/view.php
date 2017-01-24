@@ -12,9 +12,9 @@ $this->menu=array(
         array('label'=>'Courses', 'url'=>array('admin')),
 	array('label'=>'Create Course', 'url'=>array('create')),
         array('label'=>'Levels', 'url'=>array('Level/admin')),
-        array('label'=>'Create Level', 'url'=>array('level/create')),
-        array('label'=>'Level Subject', 'url'=>array('levelsubject/admin')),
-        array('label'=>'Level Exam', 'url'=>array('levelexam/admin')),
+        array('label'=>'Create Level', 'url'=>array('Level/create')),
+        array('label'=>'Level Subject', 'url'=>array('LevelSubject/admin')),
+        array('label'=>'Level Exam', 'url'=>array('LevelExam/admin')),
 
 	array('label'=>'Update Course', 'url'=>array('update', 'id'=>$model->CourseID)),
 	

@@ -10,8 +10,8 @@ $this->breadcrumbs=array(
         <?php 
             
             echo "<div> <a href='".Yii::app()->baseUrl."/index.php/User/admin'>User </b>";
-            echo "<div> <a href='".Yii::app()->baseUrl."/index.php/Usermenu/admin'>User Menu</b>";
-            echo "<div> <a href='".Yii::app()->baseUrl."/index.php/user/changepassword'>Change User Passowrd</b>";
+            echo "<div> <a href='".Yii::app()->baseUrl."/index.php/UserMenu/admin'>User Menu</b>";
+            echo "<div> <a href='".Yii::app()->baseUrl."/index.php/User/changepassword'>Change User Passowrd</b>";
             echo "<div> <a href='".Yii::app()->baseUrl."/index.php/Country/admin'>Country </b>";
             echo "<div> <a href='".Yii::app()->baseUrl."/index.php/City/admin'>City </b>";
             echo "<div> <a href='".Yii::app()->baseUrl."/index.php/LeaveReason/admin'>Leave Reason </b>";

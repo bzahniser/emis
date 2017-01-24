@@ -8,12 +8,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-		array('label'=>'Cycles', 'url'=>array('cycle/admin')),
-	array('label'=>'Start New Cycle', 'url'=>array('cycle/create')),
-        array('label'=>'Cycle Exam', 'url'=>array('cycleexam/admin')),
-        array('label'=>'Add Cycle Exam', 'url'=>array('cycleexam/create')),
-        array('label'=>'Cycle Subject', 'url'=>array('cyclesubject/admin')),
-        array('label'=>'Add Cycle Subject', 'url'=>array('cyclesubject/create')),
+	array('label'=>'Cycles', 'url'=>array('Cycle/admin')),
+	array('label'=>'Start New Cycle', 'url'=>array('Cycle/create')),
+        array('label'=>'Cycle Exam', 'url'=>array('CycleExam/admin')),
+        array('label'=>'Add Cycle Exam', 'url'=>array('CycleExam/create')),
+        array('label'=>'Cycle Subject', 'url'=>array('CycleSubject/admin')),
+        array('label'=>'Add Cycle Subject', 'url'=>array('CycleSubject/create')),
         array('label'=>'Time Table', 'url'=>array('CycleSession/admin')),
         array('label'=>'New Session', 'url'=>array('CycleSession/create')),
         array('label'=>'Enrollment', 'url'=>array('Cycleenrolment/admin')),
@@ -50,7 +50,7 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		array(
                         'name'=>'ProgramID',
-                        'filter'=>CHtml::listData(program::model()->findAll(), 'ProgramID', 'ProgramName'),
+                        'filter'=>CHtml::listData(Program::model()->findAll(), 'ProgramID', 'ProgramName'),
                         'value'=>'$data->program ? $data->program->ProgramName: "-"'
                 ),
 		array(
@@ -70,7 +70,7 @@ $('.search-form form').submit(function(){
                 ),
 		array(
                         'name'=>'SubjectID',
-                        'filter'=>CHtml::listData(subject::model()->findAll(), 'SubjectID', 'SubjectName'),
+                        'filter'=>CHtml::listData(Subject::model()->findAll(), 'SubjectID', 'SubjectName'),
                         'value'=>'$data->subject ? $data->subject->SubjectName: "-"'
                 ),
 

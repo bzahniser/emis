@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	 array('label'=>'Students', 'url'=>array('student/admin')),
-	array('label'=>'Add Student', 'url'=>array('student/create')),
+	array('label'=>'Students', 'url'=>array('Student/admin')),
+	array('label'=>'Add Student', 'url'=>array('Student/create')),
         array('label'=>'Leave', 'url'=>array('Leave/admin')),
         array('label'=>'New Leave', 'url'=>array('Leave/create')),
         array('label'=>'Enrollment', 'url'=>array('CycleEnrolment/admin')),

@@ -78,7 +78,7 @@ class AttendanceController extends Controller
                                 $CheckedList=[];
                             $df = Yii::app()->db->createCommand()
                                                             //->select('DefaultValue')
-                                                            ->from('V_AttendanceGeneration')
+                                                            ->from('v_attendanceGeneration')
                                                             ->where('SessionID=:id1', array(':id1'=>$id))
                                                             ->queryAll();
                             foreach ($df as $value) {
@@ -293,7 +293,7 @@ class AttendanceController extends Controller
             $data=  Cycle::model()->findAll(
                             ' Active =1 and CycleEnd=0 and '
                           . ' LevelID=:cat_id and '
-                          . ' CycleID in (SELECT CycleID FROM tbl_Cycle_Enrolment where StudentID=:StID) ',
+                          . ' CycleID in (SELECT CycleID FROM tbl_cycle_enrolment where StudentID=:StID) ',
                     array(':cat_id'=> $Parent,':StID'=>$StudentID));
 
              $data=CHtml::listData($data,'CycleID','CycleName');

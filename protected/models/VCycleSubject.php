@@ -42,7 +42,7 @@ class VCycleSubject extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'V_Cycle_Subject';
+		return 'v_cycle_subject';
 	}
 
 	/**

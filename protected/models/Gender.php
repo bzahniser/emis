@@ -14,7 +14,7 @@ class Gender extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_Gender';
+		return 'tbl_gender';
 	}
 
 	/**
