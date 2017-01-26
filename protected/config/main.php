@@ -30,12 +30,12 @@ return array(
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'11',
+		//'gii'=>array(
+		//	'class'=>'system.gii.GiiModule',
+		//	'password'=>'11',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('192.168.1.5','::1'),
-		),
+		//	'ipFilters'=>array('192.168.1.5','::1'),
+		//),
 		
 	),
 
