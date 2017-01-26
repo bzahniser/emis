@@ -48,7 +48,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		
                 array(
                         'name'=>'ProgramID',
-                        'filter'=>CHtml::listData(program::model()->findAll(), 'ProgramID', 'ProgramName'),
+                        'filter'=>CHtml::listData(Program::model()->findAll(), 'ProgramID', 'ProgramName'),
                         'value'=>'program::Model()->FindByPk($data->ProgramID)->ProgramName',
                 ),
 		'ExamID',

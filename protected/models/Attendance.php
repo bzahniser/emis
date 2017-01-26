@@ -131,7 +131,7 @@ class Attendance extends CActiveRecord
                 $criteria->with='student';
                
                 $criteria->join = " LEFT OUTER JOIN tbl_cycle cycle ON t.CycleID = cycle.CycleID "
-                                . " LEFT OUTER JOIN tbl_Level level ON t.LevelID = level.LevelID "
+                                . " LEFT OUTER JOIN tbl_level level ON t.LevelID = level.LevelID "
                                // . " LEFT OUTER JOIN tbl_Level level ON t.LevelID = level.LevelID "
                         ;
                 $criteria->compare('student.FullName',$this->StudentID,true);

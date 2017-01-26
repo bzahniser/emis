@@ -185,7 +185,7 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'ReasonID'); ?>
 		<?php echo $form->dropDownList($model, 'ReasonID', 
-                        CHtml::listData(LeaveReason::model()->findAll('Active=1'), 'ReasonID', 'ReasonName'),
+                        CHtml::listData(Leavereason::model()->findAll('Active=1'), 'ReasonID', 'ReasonName'),
                         array( 'empty'=>'-- Select --',));
                 ?>
 		<?php echo $form->error($model,'ReasonID'); ?>
