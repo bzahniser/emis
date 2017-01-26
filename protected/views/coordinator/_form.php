@@ -24,7 +24,7 @@
 		<?php 
                     if (Yii::app()->user->getState('ProgramID')===0)
                         {
-                            $Array = CHtml::listData(program::model()->findAll('Active=1'), 'ProgramID', 'ProgramName');
+                            $Array = CHtml::listData(Program::model()->findAll('Active=1'), 'ProgramID', 'ProgramName');
                             echo $form->dropDownList($model, 'ProgramID',$Array,
                             array( 'empty'=>'-- Select --'));
                         }
