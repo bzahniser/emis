@@ -29,4 +29,4 @@ $this->pageTitle=Yii::app()->name;
 </p>
 
 
-<img src="/emis/images/Turkey Education 2016.jpg" class="floatLeft"   align="right">
+<img src="/images/Turkey Education 2016.jpg" class="floatLeft"   align="right">
