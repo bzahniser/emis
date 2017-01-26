@@ -15,8 +15,8 @@ $this->menu=array(
         array('label'=>'Add Cycle Subject', 'url'=>array('Cyclesubject/create')),
         array('label'=>'Time Table', 'url'=>array('CycleSession/admin')),
         array('label'=>'New Session', 'url'=>array('CycleSession/create')),
-        array('label'=>'Enrollment', 'url'=>array('Cycleenrolment/admin')),
-        array('label'=>'New Enrollment', 'url'=>array('Cycleenrolment/create')),
+        array('label'=>'Enrollment', 'url'=>array('CycleEnrolment/admin')),
+        array('label'=>'New Enrollment', 'url'=>array('CycleEnrolment/create')),
         array('label'=>'Waiting', 'url'=>array('Waiting/admin')),
         array('label'=>'New Waiting', 'url'=>array('Waiting/create')),
 );
