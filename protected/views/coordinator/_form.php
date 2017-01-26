@@ -32,7 +32,7 @@
                         {
                             $Cond='Active=1 and ProgramID='.Yii::app()->user->getState('ProgramID');
                             $model->ProgramID=Yii::app()->user->getState('ProgramID');
-                            $Array = CHtml::listData(program::model()->findAll($Cond), 'ProgramID', 'ProgramName');
+                            $Array = CHtml::listData(Program::model()->findAll($Cond), 'ProgramID', 'ProgramName');
                             echo $form->dropDownList($model, 'ProgramID',$Array,
                             array());
                         }
