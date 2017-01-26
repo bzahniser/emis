@@ -79,7 +79,7 @@ $('.search-form form').submit(function(){
 		
 		 array(
                         'name'=>'ReasonID',
-                        'filter'=>CHtml::listData(LeaveReason::model()->findAll(), 'ReasonID', 'ReasonName'),
+                        'filter'=>CHtml::listData(Leavereason::model()->findAll(), 'ReasonID', 'ReasonName'),
                         'value'=>'$data->reason ? $data->reason->ReasonName: "-"'
                 ),
 		/*
