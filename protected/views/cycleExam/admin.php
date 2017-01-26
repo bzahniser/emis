@@ -17,7 +17,7 @@ $this->menu=array(
         array('label'=>'Time Table', 'url'=>array('CycleSession/admin')),
         array('label'=>'New Session', 'url'=>array('CycleSession/create')),
         array('label'=>'Enrollment', 'url'=>array('CycleEnrolment/admin')),
-        array('label'=>'New Enrollment', 'url'=>array('Cycleenrolment/create')),
+        array('label'=>'New Enrollment', 'url'=>array('CycleEnrolment/create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
