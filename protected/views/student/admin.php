@@ -19,7 +19,7 @@ $this->menu=array(
         array('label'=>'Attendance', 'url'=>array('Attendance/admin')),
         array('label'=>'Session Attendance', 'url'=>array('Attendance/AttendanceSessionSelect')),
         array('label'=>'Exams', 'url'=>array('StudentExam/admin')),
-        array('label'=>'Enter Scores', 'url'=>array('Studentexam/ExamSessionSelect')),
+        array('label'=>'Enter Scores', 'url'=>array('StudentExam/ExamSessionSelect')),
     
 );
 
