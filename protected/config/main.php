@@ -93,11 +93,11 @@ return array(
 
 		// database settings are configured in database.php
 		'db' => array (
-		'connectionString' => 'mysql:host=localhost;dbname=emisdb',
+		'connectionString' => 'mysql:host=emisdb.c8twamcdyd71.eu-west-1.rds.amazonaws.com;dbname=emisdb',
                     'emulatePrepare' => true,
-                    'username' => 'root',
-                    'password' => '',
-                    'charset' => 'utf8',			
+                    'username' => 'emisdbadmin',
+                    'password' => 'li1An^OMyHah',
+                    'charset' => 'utf8',
 		),
             
                 'authManager'=>  array(
